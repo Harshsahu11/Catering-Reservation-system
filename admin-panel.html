@@ -16,8 +16,13 @@
       <form onsubmit="uploadProduct(event)">
         <input type="text" id="productName" placeholder="Product Name" required>
         <input type="number" id="productPrice" placeholder="Price" required>
+        <input type="file" id="productImage" accept="image/*" required>
         <button type="submit">Add Product</button>
       </form>
+    </div>
+    <div id="viewProducts">
+      <h3>Product List</h3>
+      <div id="productList"></div>
     </div>
     <div id="viewOrders">
       <h3>View All Orders</h3>
@@ -25,5 +30,6 @@
     </div>
     <button onclick="location.href='index.html'" class="back-btn">Back to Home</button>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
